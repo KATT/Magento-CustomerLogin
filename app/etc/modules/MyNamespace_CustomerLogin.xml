@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<MyNamespace_CustomerLogin>
+			<active>true</active>
+			<codePool>local</codePool>
+		</MyNamespace_CustomerLogin>
+	</modules>
+</config> 

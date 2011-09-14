@@ -1,0 +1,29 @@
+
+<config>    
+    <modules>
+        <MyNamespace_CustomerLogin>
+            <version>0.1.0</version>
+        </MyNamespace_CustomerLogin>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <customer>MyNamespace_CustomerLogin_Block_Customer_Grid</customer>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <MyNamespace_CustomerLogin before="Mage_Adminhtml">MyNamespace_CustomerLogin</MyNamespace_CustomerLogin>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
